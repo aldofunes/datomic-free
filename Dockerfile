@@ -24,4 +24,4 @@ RUN sed "s/# log-dir=log/log-dir=\/log/" -i config/transactor.properties
 
 EXPOSE 4334 4335 4336 8001
 
-CMD ["./bin/transactor", "config/transactor.properties"]
+CMD ["/datomic/bin/transactor", "/datomic/config/transactor.properties"]
