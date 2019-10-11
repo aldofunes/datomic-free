@@ -14,8 +14,6 @@ RUN cp config/samples/free-transactor-template.properties config/transactor.prop
 
 RUN sed "s/host=localhost/host=0.0.0.0/" -i config/transactor.properties
 
-RUN sed "s/# storage-access=local/storage-access=remote/" -i config/transactor.properties
-
 RUN mkdir /data
 RUN sed "s/# data-dir=data/data-dir=\/data/" -i config/transactor.properties
 
